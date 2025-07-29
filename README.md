@@ -6,17 +6,16 @@ This project is a simplified and educational implementation of Kimi K2 built ent
 
 1. Recreate Kimi-K2 architecture without using pre-trained models or tokenizers
    
-2. Use a custom word-level tokenizer (not from Hugging Face)
-   
-3. Implement core components like:-
+2. Implement core components like:-
     1). Transformer blocks
+   
     2). Mixture of Experts (MoE) routing
+   
     3). SwiGLU activation
+   
     4). MuonClip optimizer (custom AdamW + gradient clipping)
    
-4. Train on a small dataset (TinyStories)
-   
-5. Generate coherent stories from scratch using GPT-like autoregressive decoding
+3. Train on a small dataset (TinyStories)
 
 ## Core Architecture
 
@@ -27,38 +26,38 @@ This converts the dataset into a vocabulary of lowercase words and punctuation.
 
 2. Model Components
    
-🔹 Embedding
+ 1). Embedding
 token_embed → turns word indices into dense vectors
 pos_embed → adds positional information
 
-🔹 Transformer Block
+ 2).Transformer Block
 Uses Multi-Head Attention with causal masking to prevent peeking into future tokens.
 Residual connections and layer normalization included.
 
-🔹 MoE Layer (Mixture of Experts)
+ 3). MoE Layer (Mixture of Experts)
 Multiple parallel expert MLPs
 A router dynamically selects top-k experts per token.
 Each token gets routed only to the top-scoring experts.
 
-🔹 SwiGLU Activation
+ 4). SwiGLU Activation
 More expressive than ReLU
 Defined as: SwiGLU(x) = x₁ * SiLU(x₂) (split on channel dimension)
 
-🔹 Output
+ 5). Output
 A linear layer projects back to vocabulary size for token prediction
 
 3. MuonClip Optimizer
 
 A custom optimizer based on AdamW with gradient clipping:
-Clipping gradients when norm exceeds threshold
-Adds weight decay
-Fully implemented manually to show inner workings
+ 1). Clipping gradients when norm exceeds threshold
+ 2). Adds weight decay
+ 3). Fully implemented manually to show inner workings
 
 ## Training
 
-Trained on 100k TinyStories samples
-Batch size: 32 | Block size: 256 | Steps: 2000
-Loss is plotted every 100 steps
+1. Trained on 100k TinyStories samples
+2. Batch size: 32 | Block size: 256 | Steps: 2000
+3. Loss is plotted every 100 steps
 
 ## Results
 generate(model, "Once upon a time", max_new_tokens=100)
