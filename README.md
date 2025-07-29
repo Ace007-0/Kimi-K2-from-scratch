@@ -88,7 +88,7 @@ We use roneneldan/TinyStories, a collection of child-friendly stories designed t
 
 ## Future Work
 
-1). Replace word-level tokenizer with BPE or SentencePiece (optional)
+1). Replace word-level tokenizer with BPE or SentencePiece
 
 2). Add multi-GPU training and evaluation scripts
 
