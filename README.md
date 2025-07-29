@@ -67,6 +67,9 @@ This converts the dataset into a vocabulary of lowercase words and punctuation.
 ## Results
 generate(model, "Once upon a time", max_new_tokens=100)
 Generates plausible story-like continuations. As training steps increase, story coherence improves.
+<img width="1428" height="368" alt="Output of Kimi_K2_3 prev" src="https://github.com/user-attachments/assets/1042b703-1b4c-4554-a8c9-e98f2da4889b" />
+Note: Though the results are not yet up to the mark, the core architecture and training loop work as expected. With better tokenization, dataset scaling, or hyperparameter tuning, performance can improve significantly.
+
 
 ## Installation & Run
 
