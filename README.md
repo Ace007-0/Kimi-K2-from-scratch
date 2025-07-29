@@ -50,11 +50,11 @@ This converts the dataset into a vocabulary of lowercase words and punctuation.
 
 A custom optimizer based on AdamW with gradient clipping:
 
- 1). Clipping gradients when norm exceeds threshold
+   1). Clipping gradients when norm exceeds threshold
  
- 2). Adds weight decay
+   2). Adds weight decay
  
- 3). Fully implemented manually to show inner workings
+   3). Fully implemented manually to show inner workings
 
 ## Training
 
@@ -95,7 +95,11 @@ We use roneneldan/TinyStories, a collection of child-friendly stories designed t
 3). Train longer on larger subsets for better quality
 
 Acknowledgments
+
 Karpathy’s nanoGPT
+
 Vizuara.ai — for inspiration and educational content in AI and ML
+
 MoonshotAI’s Kimi-K2
+
 Ronen Eldan’s TinyStories dataset
