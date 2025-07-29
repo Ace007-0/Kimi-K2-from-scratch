@@ -2,7 +2,7 @@
 
 This project is a simplified and educational implementation of Kimi K2 built entirely from scratch, inspired by Karpathy’s nanoGPT. It integrates modern techniques such as Mixture of Experts (MoE), SwiGLU activation, MuonClip optimizer, and custom tokenization, trained on the TinyStories dataset.
 
-## Project Goals:-
+## Project Goals
 
 1. Recreate Kimi-K2 architecture without using pre-trained models or tokenizers
    
@@ -18,7 +18,7 @@ This project is a simplified and educational implementation of Kimi K2 built ent
    
 5. Generate coherent stories from scratch using GPT-like autoregressive decoding
 
-Core Architecture:-
+## Core Architecture
 
 1. Tokenizer
 A simple word-level tokenizer built with regex:
@@ -54,37 +54,36 @@ Clipping gradients when norm exceeds threshold
 Adds weight decay
 Fully implemented manually to show inner workings
 
-Training
+## Training
 
 Trained on 100k TinyStories samples
 Batch size: 32 | Block size: 256 | Steps: 2000
 Loss is plotted every 100 steps
 
-Results
+## Results
 generate(model, "Once upon a time", max_new_tokens=100)
 Generates plausible story-like continuations. As training steps increase, story coherence improves.
 
-Installation & Run
+## Installation & Run
 
 pip install datasets torch matplotlib tqdm --quiet
 Just paste and run the code in Google Colab, and training begins automatically.
 
-Dataset
+## Dataset
 We use roneneldan/TinyStories, a collection of child-friendly stories designed to train small language models.
 
-Why This Project Matters
+## Why This Project Matters
 
-This is a great educational replica of Kimi-K2 that:
-Requires no deep learning frameworks like Hugging Face Transformers
-Helps you understand every layer from tokenization to logits
-Includes cutting-edge components like MoE, SwiGLU, and custom optimizers
+1). This is a great educational replica of Kimi-K2 that:
+2). Requires no deep learning frameworks like Hugging Face Transformers
+3). Helps you understand every layer from tokenization to logits
+4). Includes cutting-edge components like MoE, SwiGLU, and custom optimizers
 
-🧵 Future Work
-Replace word-level tokenizer with BPE or SentencePiece (optional)
+## Future Work
 
-Add multi-GPU training and evaluation scripts
-
-Train longer on larger subsets for better quality
+1). Replace word-level tokenizer with BPE or SentencePiece (optional)
+2). Add multi-GPU training and evaluation scripts
+3). Train longer on larger subsets for better quality
 
 Acknowledgments
 Karpathy’s nanoGPT
