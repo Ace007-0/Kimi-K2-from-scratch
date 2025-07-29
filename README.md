@@ -50,11 +50,11 @@ This converts the dataset into a vocabulary of lowercase words and punctuation.
 
 A custom optimizer based on AdamW with gradient clipping:
 
-   1). Clipping gradients when norm exceeds threshold
+      1). Clipping gradients when norm exceeds threshold
  
-   2). Adds weight decay
+      2). Adds weight decay
  
-   3). Fully implemented manually to show inner workings
+      3). Fully implemented manually to show inner workings
 
 ## Training
 
