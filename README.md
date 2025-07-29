@@ -82,6 +82,18 @@ Just paste and run the code in Google Colab, and training begins automatically.
 ## Dataset
 We use roneneldan/TinyStories, a collection of child-friendly stories designed to train small language models.
 
+## Requirements
+
+| Component            | Version / Details                              |
+| -------------------- | ---------------------------------------------- |
+| Python               | 3.8+                                           |
+| PyTorch              | >= 2.0                                         |
+| HuggingFace Datasets | `datasets` library for loading TinyStories     |
+| Matplotlib           | For loss curve visualization                   |
+| tqdm                 | For training progress bars                     |
+| Google Colab         | Recommended for training (supports GPU easily) |
+
+
 ## Why This Project Matters
 
 1). This is a great educational replica of Kimi-K2 that:
@@ -109,3 +121,6 @@ Vizuara.ai — for inspiration and educational content in AI and ML
 MoonshotAI’s Kimi-K2
 
 Ronen Eldan’s TinyStories dataset
+
+## Contact
+For questions or suggestions, please reach out via the repository issues or mail.
