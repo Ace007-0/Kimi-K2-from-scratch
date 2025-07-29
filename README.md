@@ -1,4 +1,4 @@
-# Kimi-K2-from-scratch
+# Nano-Kimi
 
 This project is a simplified and educational implementation of Kimi K2 built entirely from scratch, inspired by Karpathy’s nanoGPT. It integrates modern techniques such as Mixture of Experts (MoE), SwiGLU activation, MuonClip optimizer, and custom tokenization, trained on the TinyStories dataset.
 
