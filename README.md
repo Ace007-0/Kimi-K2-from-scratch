@@ -48,7 +48,7 @@ This converts the dataset into a vocabulary of lowercase words and punctuation.
 
 3. MuonClip Optimizer
 
-A custom optimizer based on AdamW with gradient clipping:
+      A custom optimizer based on AdamW with gradient clipping:
 
       1). Clipping gradients when norm exceeds threshold
  
